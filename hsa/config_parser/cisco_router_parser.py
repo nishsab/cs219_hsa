@@ -405,7 +405,6 @@ class cisco_router(object):
         
     tokens = iface_info[0][0].split()
     iface = cisco_router.get_ethernet_port_name(tokens[1].lower())
-    print tokens[1], iface
     if iface.startswith("vlan"):
       #vlan port 
       vlan = int(iface[4:])
@@ -423,12 +422,10 @@ class cisco_router(object):
           self.vlan_span_ports["vlan%d"%vlan] = [iface]
         elif iface not in self.vlan_span_ports["vlan%d"%vlan]:
           self.vlan_span_ports["vlan%d"%vlan].append(iface)
-        print self.configed_vlans
         self.vlan_span_ports
       else:
         #physical port
         vlan = None
-      print "!!!!!!!", self.config_ports
       self.config_ports.add(iface)
         
     shutdown = False
@@ -561,7 +558,6 @@ class cisco_router(object):
     for line in f:
       tokens = line.split()
       if (len(tokens) >= 6 and tokens[4].lower() == "arpa"):
-        print tokens
         self.arp_table[tokens[1]] = \
         (tokens[3].lower(),tokens[5].lower())
     f.close()
