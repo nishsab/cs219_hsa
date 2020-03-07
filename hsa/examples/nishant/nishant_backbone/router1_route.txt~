@@ -1,3 +1,0 @@
-Prefix               Next Hop             Interface
-0.0.0.0/0	     10.0.1.2          	  TenGigabitEthernet2/2.1
-10.4.0.0/16	     10.0.1.2          	  TenGigabitEthernet2/2.1

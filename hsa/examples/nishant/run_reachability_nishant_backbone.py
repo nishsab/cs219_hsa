@@ -39,15 +39,15 @@ settings = {
 all_x = wildcard_create_bit_repeat(ntf.length,0x3)
 # uncomment to set some field
 #set_header_field(cisco_router.HS_FORMAT(), all_x, "field", value, right_mask)
-set_header_field(cisco_router.HS_FORMAT(), all_x, "vlan", 10, 0)
+# set_header_field(cisco_router.HS_FORMAT(), all_x, "vlan", 10, 0)
 test_pkt = headerspace(ntf.length)
 test_pkt.add_hs(all_x)
 
 #set some input/output ports
 output_port_addition = cisco_router.PORT_TYPE_MULTIPLIER * \
 cisco_router.OUTPUT_PORT_TYPE_CONST
-src_port_id = name_to_id["router0"]["te2/1"]
-dst_port_ids = [name_to_id["router2"]["te2/3"]+output_port_addition]
+src_port_id = name_to_id["router0"]["te2/3"]
+dst_port_ids = [name_to_id["router2"]["te2/2"]+output_port_addition]
 
 #start reachability test and print results
 st = time()
