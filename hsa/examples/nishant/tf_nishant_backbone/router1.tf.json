@@ -1,0 +1,109 @@
+{
+ "lazy_eval_bytes": [], 
+ "rules": [
+  {
+   "file": "", 
+   "rewrite": null, 
+   "out_ports": [
+    200000
+   ], 
+   "affected_by": [], 
+   "mask": null, 
+   "in_ports": [
+    200001, 
+    200003, 
+    200002
+   ], 
+   "inverse_rewrite": null, 
+   "action": "fwd", 
+   "line": [], 
+   "inverse_match": null, 
+   "id": "router1_1", 
+   "match": "xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,00000000,00000001", 
+   "influence_on": []
+  }, 
+  {
+   "file": "", 
+   "rewrite": null, 
+   "out_ports": [
+    220001
+   ], 
+   "affected_by": [], 
+   "mask": null, 
+   "in_ports": [
+    210001
+   ], 
+   "inverse_rewrite": null, 
+   "action": "fwd", 
+   "line": [], 
+   "inverse_match": null, 
+   "id": "router1_2", 
+   "match": "xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx", 
+   "influence_on": []
+  }, 
+  {
+   "file": "", 
+   "rewrite": null, 
+   "out_ports": [
+    220002
+   ], 
+   "affected_by": [], 
+   "mask": null, 
+   "in_ports": [
+    210002
+   ], 
+   "inverse_rewrite": null, 
+   "action": "fwd", 
+   "line": [], 
+   "inverse_match": null, 
+   "id": "router1_3", 
+   "match": "xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx", 
+   "influence_on": []
+  }, 
+  {
+   "file": "", 
+   "rewrite": null, 
+   "out_ports": [
+    220003
+   ], 
+   "affected_by": [], 
+   "mask": null, 
+   "in_ports": [
+    210003
+   ], 
+   "inverse_rewrite": null, 
+   "action": "fwd", 
+   "line": [], 
+   "inverse_match": null, 
+   "id": "router1_4", 
+   "match": "xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx", 
+   "influence_on": []
+  }, 
+  {
+   "file": "nishant_backbone/router1_route.txt", 
+   "rewrite": "00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001", 
+   "out_ports": [
+    210003
+   ], 
+   "affected_by": [], 
+   "mask": "11111111,11111111,11111111,11111111,11111111,11111111,11111111,11111111,11111111,11111111,11111111,11111111,11111111,11111111,00000000,00000000", 
+   "in_ports": [
+    200000
+   ], 
+   "inverse_rewrite": "00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,xxxxxxxx,xxxxxxxx", 
+   "action": "rw", 
+   "line": [
+    1
+   ], 
+   "inverse_match": "xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,00001010,00000100,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,00000000,00000001", 
+   "id": "router1_5", 
+   "match": "xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,00001010,00000100,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx,xxxxxxxx", 
+   "influence_on": []
+  }
+ ], 
+ "send_on_receiving_port": false, 
+ "prefix_id": "router1", 
+ "lazy_eval_active": false, 
+ "length": 16, 
+ "next_id": 5
+}

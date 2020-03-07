@@ -1,0 +1,4 @@
+Prefix               Next Hop             Interface
+10.1.1.0/32	     receive              router0a
+10.1.1.1/32	     receive              router0b
+10.1.1.2/32	     receive              router0c
