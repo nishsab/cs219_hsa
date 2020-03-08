@@ -24,7 +24,7 @@ settings = {
         "router2",
         "router3",
     ],
-    "input_path":"tf_nishant_backbone",
+    "input_path":"tf_cs219_toy_example_backbone",
     "num_layers":3,
     "fwd_engine_layer":2,
     "switch_id_multiplier":cisco_router.SWITCH_ID_MULTIPLIER,
@@ -47,7 +47,7 @@ test_pkt.add_hs(all_x)
 output_port_addition = cisco_router.PORT_TYPE_MULTIPLIER * \
 cisco_router.OUTPUT_PORT_TYPE_CONST
 src_port_id = name_to_id["router0"]["te2/1"]
-dst_port_ids = [name_to_id["router2"]["te2/3"]+output_port_addition]
+dst_port_ids = [name_to_id["router3"]["te2/3"]+output_port_addition]
 
 #start reachability test and print results
 st = time()
