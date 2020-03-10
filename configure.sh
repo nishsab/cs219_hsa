@@ -4,4 +4,4 @@ cd hsa
 ./setup.sh
 
 cd ../cs219_toy_example
-python generate_cs219_toy_example_backbone_tf.py
+python generate_transfer_functions.py

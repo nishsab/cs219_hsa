@@ -18,8 +18,8 @@ settings = {
         "router2",
         "router3",
     ],
-    "input_path":"cs219_toy_example_backbone",
-    "output_path":"tf_cs219_toy_example_backbone",
+    "input_path":"configuration_files",
+    "output_path":"transfer_functions",
     "topology":[
         ("router0", "te2/2", "router1", "te2/2"),
         ("router0", "te2/3", "router2", "te2/2"),
