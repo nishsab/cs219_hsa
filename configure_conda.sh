@@ -25,7 +25,7 @@ echo "░░░░░░░░"
 echo "░░░░░░░░ Generate HSA Transfer Functions"
 echo "░░░░░░░░"
 cd ../cs219_toy_example
-python generate_transfer_functions.py
+python generate_tf.py
 echo "░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░"
 echo "░░░░░░░░ Done!                                          ░░░░░░░░"
 echo "░░░░░░░░ Make sure you swtich to conda env <cs219_hsa>  ░░░░░░░░"

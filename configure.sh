@@ -4,4 +4,4 @@ cd hsa
 ./setup.sh
 
 cd ../cs219_toy_example
-python generate_transfer_functions.py
+python generate_tf.py
