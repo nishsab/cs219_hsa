@@ -1,3 +1,4 @@
 *.so
 *~
 *.pyc
+cs219_toy_example/tf_cs219_toy_example_backbone/
