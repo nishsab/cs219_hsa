@@ -6,7 +6,7 @@ conda create --name cs219_hsa python=2.7
 echo "░░░░░░░░"
 echo "░░░░░░░░ Swtich to Conda Environment <cs219_hsa>"
 echo "░░░░░░░░"
-eval "$(conda shell.bash hook)"L
+eval "$(conda shell.bash hook)"
 conda activate cs219_hsa
 echo "░░░░░░░░"
 echo "░░░░░░░░ Install Python Package <hsa> in Conda Development Mode"
