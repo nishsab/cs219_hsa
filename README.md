@@ -13,6 +13,7 @@ Out of the box version of the hsa-python library with toy example. *We did not w
 ## 1. Configuration
 
 You should use either Option 1 or Option 2 (not both) depending on your Python environment.
+<<<<<<< HEAD
 
 ### 1.1. Option 1: Python 2
 
@@ -50,5 +51,3 @@ python run_reachability.py
 python run_loop_detection.py
 ```
 
-
-      
