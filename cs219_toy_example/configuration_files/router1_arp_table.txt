@@ -1,4 +1,4 @@
 Protocol  Address          Age (min)  Hardware Addr   Type   Interfac
 Internet  10.4.0.2           0        0000.0000.0002  ARPA   TenGigabitEthernet2/2.1
 Internet  10.4.3.2           0        0000.0000.0032  ARPA   TenGigabitEthernet2/3.1
-Internet  10.1.0.2           0        0000.0001.0002  ARPA   TenGigabitEthernet2/1.1
+Internet  10.1.0.2           0        0000.0001.0012  ARPA   TenGigabitEthernet2/1.1
